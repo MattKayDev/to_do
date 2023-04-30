@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My to do list</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Get things done</title>
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
 
-        <div id="myId" class="header">
-            <h2>My to do list</h2>
-            <input type="text" id="myInput" placeholder="Hit the gym?"/>
-            <span onclick="newElement()" class="addBtn">Add</span>
+        <div id="todoID" class="header">
+            <h2>TO-DO</h2>
+            <input type="text" id="taskInput" placeholder="Enter task you need to?"/>
+            <span onclick="newElement()" class="addBtn">ADD</span>
         </div>
         
-        <ul id="myUL">
+        <ul id="taskList">
+            <li>Create a To-Do</li>
             <li>Hit the gym</li>
-            <li class="checked"></li>
-            <li></li>
+            <li class="checked">Take out trash</li>
+            <li>Go shopping</li>
         </ul>
+        <script src="script.js"></script>
     </body>
 </html>
